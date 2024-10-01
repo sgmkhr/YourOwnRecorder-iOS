@@ -16,6 +16,7 @@
 		2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FB2CAB4E2600D9A03D /* Recorder.swift */; };
 		2170C9FE2CAB4F7C00D9A03D /* RecorderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FD2CAB4F7C00D9A03D /* RecorderItem.swift */; };
 		2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FF2CAC271C00D9A03D /* Date+Today.swift */; };
+		2170CA022CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2170C9FB2CAB4E2600D9A03D /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		2170C9FD2CAB4F7C00D9A03D /* RecorderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderItem.swift; sourceTree = "<group>"; };
 		2170C9FF2CAC271C00D9A03D /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
+		2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderListViewController+DataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				2170C9E42CAB48A100D9A03D /* RecorderListViewController.swift */,
+				2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */,
 			);
 			path = RecorderListViewController;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
 				2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */,
 				2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */,
+				2170CA022CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift in Sources */,
 				2170C9FE2CAB4F7C00D9A03D /* RecorderItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
