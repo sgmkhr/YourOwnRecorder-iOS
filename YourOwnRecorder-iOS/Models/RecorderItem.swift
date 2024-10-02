@@ -13,8 +13,13 @@ enum RecorderItem {
     case slider
     case dateField
     
-    //var title: String? = nil
-    //var content = switch self {
-    //case .textField:
+    var name: String? {
+        switch self {
+        case .textField: return "text field"
+        case .textArea: return "text area"
+        case .slider: return "slider"
+        case .dateField: return "date field"
+        }
+    }
         
 }
