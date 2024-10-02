@@ -11,6 +11,16 @@ extension RecorderListViewController {
     typealias DataSource = UICollectionViewDiffableDataSource<Int, Recorder.ID>
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Recorder.ID>
     
+    func updateSnapshot(reloading ids: [Recorder.ID] = []) {
+        var snapshot = Snapshot()
+        snapshot.appendSections([0])
+        snapshot.appendItems(recorders.map { $0.id })
+        if !ids.isEmpty {
+            snapshot.reloadItems(ids)
+        }
+        dataSource.apply(snapshot)
+    }
+    
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Recorder.ID) {
         let recorder = recorder(withId: id)
         var contentConfiguration = cell.defaultContentConfiguration()
