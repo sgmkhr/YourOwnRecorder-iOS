@@ -17,6 +17,15 @@ struct Recorder: Identifiable {
     var isShowed: Bool = true
 }
 
+extension [Recorder] {
+    func indexOfRecorder(withId id: Recorder.ID) -> Self.Index {
+        guard let index = firstIndex(where: { $0.id == id }) else {
+            fatalError()
+        }
+        return index
+    }
+}
+
 #if DEBUG
 extension Recorder {
     static var sampleData = [

@@ -12,7 +12,7 @@ extension RecorderListViewController {
     typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Recorder.ID>
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Recorder.ID) {
-        let recorder = recorders[indexPath.item]
+        let recorder = recorder(withId: id)
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = recorder.title
         contentConfiguration.secondaryText = recorder.updatedDate.dayAndTimeText
@@ -22,5 +22,15 @@ extension RecorderListViewController {
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
         backgroundConfiguration.backgroundColor = UIColor(red: 254/255, green: 247/255, blue: 1, alpha: 1)
         cell.backgroundConfiguration = backgroundConfiguration
+    }
+    
+    func recorder(withId id: Recorder.ID) -> Recorder {
+        let index = recorders.indexOfRecorder(withId: id)
+        return recorders[index]
+    }
+    
+    func updateRecorder(_ recorder: Recorder) {
+        let index = recorders.indexOfRecorder(withId: recorder.id)
+        recorders[index] = recorder
     }
 }
