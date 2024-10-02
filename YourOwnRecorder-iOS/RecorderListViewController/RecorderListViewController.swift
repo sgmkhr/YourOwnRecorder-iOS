@@ -10,6 +10,7 @@ import UIKit
 class RecorderListViewController: UICollectionViewController {
     
     var dataSource: DataSource!
+    var recorders: [Recorder] = Recorder.sampleData
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,13 +21,13 @@ class RecorderListViewController: UICollectionViewController {
         let cellRegistration = UICollectionView.CellRegistration(handler: cellRegistrationHandler)
         
         dataSource = DataSource(collectionView: collectionView) {
-            (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: String) in
+            (collectionView: UICollectionView, indexPath: IndexPath, itemIdentifier: Recorder.ID) in
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
         }
         
         var snapshot = Snapshot()
         snapshot.appendSections([0])
-        snapshot.appendItems(Recorder.sampleData.map { $0.title })
+        snapshot.appendItems(recorders.map { $0.id })
         dataSource.apply(snapshot)
         
         collectionView.dataSource = dataSource

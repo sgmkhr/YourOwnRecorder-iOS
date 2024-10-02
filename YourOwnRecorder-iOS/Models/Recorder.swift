@@ -7,7 +7,8 @@
 
 import Foundation
 
-struct Recorder {
+struct Recorder: Identifiable {
+    var id: String = UUID().uuidString
     var title: String
     var description: String? = nil
     var contents: [RecorderItem]

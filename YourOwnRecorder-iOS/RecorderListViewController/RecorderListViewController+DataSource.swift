@@ -8,11 +8,11 @@
 import UIKit
 
 extension RecorderListViewController {
-    typealias DataSource = UICollectionViewDiffableDataSource<Int, String>
-    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, String>
+    typealias DataSource = UICollectionViewDiffableDataSource<Int, Recorder.ID>
+    typealias Snapshot = NSDiffableDataSourceSnapshot<Int, Recorder.ID>
     
-    func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: String) {
-        let recorder = Recorder.sampleData[indexPath.item]
+    func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, id: Recorder.ID) {
+        let recorder = recorders[indexPath.item]
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = recorder.title
         contentConfiguration.secondaryText = recorder.updatedDate.dayAndTimeText
