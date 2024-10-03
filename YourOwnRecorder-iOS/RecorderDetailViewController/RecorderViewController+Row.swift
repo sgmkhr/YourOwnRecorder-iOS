@@ -12,14 +12,14 @@ extension RecorderViewController {
         case title
         case description
         case updatedDate
-        case content
+        case record
         
         var imageName: String? {
             switch self {
             case .title: return "title"
             case .description: return "description"
             case .updatedDate: return "updatedDate"
-            case .content: return "content"
+            case .record: return "record"
             }
         }
         
@@ -34,7 +34,7 @@ extension RecorderViewController {
             case .title: return .headline
             case .description: return .callout
             case .updatedDate: return .footnote
-            case .content: return .subheadline
+            case .record: return .subheadline
             }
         }
     }

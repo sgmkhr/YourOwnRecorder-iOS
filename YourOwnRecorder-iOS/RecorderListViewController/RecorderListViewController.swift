@@ -30,6 +30,18 @@ class RecorderListViewController: UICollectionViewController {
         collectionView.dataSource = dataSource
     }
     
+    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+        let id = recorders[indexPath.item].id
+        pushDetailViewForRecorder(withId: id)
+        return false
+    }
+    
+    func pushDetailViewForRecorder(withId id: Recorder.ID) {
+        let recorder = recorder(withId: id)
+        let viewController = RecorderViewController(recorder: recorder)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     private func listLayout() -> UICollectionViewCompositionalLayout {
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
         listConfiguration.showsSeparators = false
