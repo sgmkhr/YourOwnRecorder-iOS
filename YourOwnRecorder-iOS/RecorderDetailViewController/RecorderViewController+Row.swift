@@ -9,17 +9,19 @@ import UIKit
 
 extension RecorderViewController {
     enum Row: Hashable {
+        case header(String)
         case title
         case description
         case updatedDate
-        case record
+        case records
         
         var imageName: String? {
             switch self {
+            case .header: return ""
             case .title: return "title"
             case .description: return "description"
             case .updatedDate: return "updatedDate"
-            case .record: return "record"
+            case .records: return "record"
             }
         }
         
@@ -31,10 +33,11 @@ extension RecorderViewController {
         
         var textStyle: UIFont.TextStyle {
             switch self {
+            case .header: return .title2
             case .title: return .headline
             case .description: return .callout
             case .updatedDate: return .footnote
-            case .record: return .subheadline
+            case .records: return .subheadline
             }
         }
     }

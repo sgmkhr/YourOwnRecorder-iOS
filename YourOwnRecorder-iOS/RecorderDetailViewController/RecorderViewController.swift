@@ -18,6 +18,7 @@ class RecorderViewController: UICollectionViewController {
         self.recorder = recorder
         var listConfiguration = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
         listConfiguration.showsSeparators = false
+        listConfiguration.headerMode = .firstItemInSection
         let listLayout = UICollectionViewCompositionalLayout.list(using: listConfiguration)
         super.init(collectionViewLayout: listLayout)
     }
@@ -38,10 +39,37 @@ class RecorderViewController: UICollectionViewController {
             navigationItem.style = .navigator
         }
         navigationItem.title = NSLocalizedString("Recorder", comment: "Recorder view controller title")
-        updateSnapshot()
+        navigationItem.rightBarButtonItem = editButtonItem
+        updateSnapshotForViewing()
+    }
+    
+    override func setEditing(_ editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            updateSnapshotForEditing()
+        } else {
+            updateSnapshotForViewing()
+        }
     }
     
     func cellRegistrationHandler(cell: UICollectionViewListCell, indexPath: IndexPath, row: Row) {
+        let section = section(for: indexPath)
+        
+        switch (section, row) {
+        case (_, .header(let title)):
+            var contentConfiguration = cell.defaultContentConfiguration()
+            contentConfiguration.text = title
+            cell.contentConfiguration = contentConfiguration
+        case (.view, _):
+            var contentConfiguration = cell.defaultContentConfiguration()
+            contentConfiguration.text = text(for: row)
+            contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
+            contentConfiguration.image = row.image
+            cell.contentConfiguration = contentConfiguration
+        default:
+            fatalError("Unexpected combination of section and row.")
+        }
+        
         var contentConfiguration = cell.defaultContentConfiguration()
         contentConfiguration.text = text(for: row)
         contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
@@ -56,14 +84,24 @@ class RecorderViewController: UICollectionViewController {
         case .description: return recorder.description
         case .updatedDate: return recorder.updatedDate.dayAndTimeText
 //        case .content: return String(recorder.contents.map { $0.name })
-        default: return ""
+        default: return nil
         }
     }
     
-    private func updateSnapshot() {
+    private func updateSnapshotForEditing() {
+        var snapshot = Snapshot()
+        snapshot.appendSections([.title, .description, .records, .isShowed])
+        snapshot.appendItems([.header(Section.title.name)], toSection: .title)
+        snapshot.appendItems([.header(Section.description.name)], toSection: .description)
+        snapshot.appendItems([.header(Section.records.name)], toSection: .records)
+        snapshot.appendItems([.header(Section.isShowed.name)], toSection: .isShowed)
+        dataSource.apply(snapshot)
+    }
+    
+    private func updateSnapshotForViewing() {
         var snapshot = Snapshot()
         snapshot.appendSections([.view])
-        snapshot.appendItems([Row.title, Row.description, Row.updatedDate, Row.record], toSection: .view)
+        snapshot.appendItems([Row.header(""), Row.title, Row.description, Row.updatedDate, Row.records], toSection: .view)
         dataSource.apply(snapshot)
     }
     
