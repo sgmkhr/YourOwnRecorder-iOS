@@ -57,15 +57,9 @@ class RecorderViewController: UICollectionViewController {
         
         switch (section, row) {
         case (_, .header(let title)):
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = title
-            cell.contentConfiguration = contentConfiguration
+            cell.contentConfiguration = headerConfiguration(for: cell, with: title)
         case (.view, _):
-            var contentConfiguration = cell.defaultContentConfiguration()
-            contentConfiguration.text = text(for: row)
-            contentConfiguration.textProperties.font = UIFont.preferredFont(forTextStyle: row.textStyle)
-            contentConfiguration.image = row.image
-            cell.contentConfiguration = contentConfiguration
+            cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
         default:
             fatalError("Unexpected combination of section and row.")
         }
@@ -78,22 +72,12 @@ class RecorderViewController: UICollectionViewController {
         cell.tintColor = .tintColor
     }
     
-    func text(for row: Row) -> String? {
-        switch row {
-        case .title: return recorder.title
-        case .description: return recorder.description
-        case .updatedDate: return recorder.updatedDate.dayAndTimeText
-//        case .content: return String(recorder.contents.map { $0.name })
-        default: return nil
-        }
-    }
-    
     private func updateSnapshotForEditing() {
         var snapshot = Snapshot()
-        snapshot.appendSections([.title, .description, .records, .isShowed])
+        snapshot.appendSections([.title, .description, .contents, .isShowed])
         snapshot.appendItems([.header(Section.title.name)], toSection: .title)
         snapshot.appendItems([.header(Section.description.name)], toSection: .description)
-        snapshot.appendItems([.header(Section.records.name)], toSection: .records)
+        snapshot.appendItems([.header(Section.contents.name)], toSection: .contents)
         snapshot.appendItems([.header(Section.isShowed.name)], toSection: .isShowed)
         dataSource.apply(snapshot)
     }
@@ -101,7 +85,7 @@ class RecorderViewController: UICollectionViewController {
     private func updateSnapshotForViewing() {
         var snapshot = Snapshot()
         snapshot.appendSections([.view])
-        snapshot.appendItems([Row.header(""), Row.title, Row.description, Row.updatedDate, Row.records], toSection: .view)
+        snapshot.appendItems([Row.header(""), Row.title, Row.description, Row.updatedDate, Row.content], toSection: .view)
         dataSource.apply(snapshot)
     }
     

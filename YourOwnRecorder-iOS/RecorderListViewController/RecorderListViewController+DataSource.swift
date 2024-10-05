@@ -30,7 +30,7 @@ extension RecorderListViewController {
         cell.contentConfiguration = contentConfiguration
         
         var backgroundConfiguration = UIBackgroundConfiguration.listGroupedCell()
-        backgroundConfiguration.backgroundColor = UIColor(red: 254/255, green: 247/255, blue: 1, alpha: 1)
+        backgroundConfiguration.backgroundColor = UIColor(red: 236/255, green: 241/255, blue: 243/255, alpha: 1)
         cell.backgroundConfiguration = backgroundConfiguration
     }
     

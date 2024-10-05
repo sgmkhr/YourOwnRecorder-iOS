@@ -21,6 +21,8 @@
 		2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */; };
 		2170CA092CAF399E00D9A03D /* RecorderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */; };
 		2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0B2CAF4A4D00D9A03D /* Record.swift */; };
+		2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */; };
+		2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +42,8 @@
 		2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Row.swift"; sourceTree = "<group>"; };
 		2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Section.swift"; sourceTree = "<group>"; };
 		2170CA0B2CAF4A4D00D9A03D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
+		2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				2170C9F62CAB4C4000D9A03D /* Models */,
+				2170CA0F2CB1695300D9A03D /* ContentViews */,
 				2170C9FA2CAB4C7200D9A03D /* RecordDetailViewController */,
 				2170C9F92CAB4C6600D9A03D /* RecordListViewController */,
 				2170C9F82CAB4C5700D9A03D /* RecorderDetailViewController */,
@@ -113,6 +118,7 @@
 				2170CA032CADECCE00D9A03D /* RecorderViewController.swift */,
 				2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */,
 				2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */,
+				2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */,
 			);
 			path = RecorderDetailViewController;
 			sourceTree = "<group>";
@@ -129,6 +135,14 @@
 			children = (
 			);
 			path = RecordDetailViewController;
+			sourceTree = "<group>";
+		};
+		2170CA0F2CB1695300D9A03D /* ContentViews */ = {
+			isa = PBXGroup;
+			children = (
+				2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */,
+			);
+			path = ContentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,9 +221,11 @@
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
 				2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */,
 				2170CA042CADECCE00D9A03D /* RecorderViewController.swift in Sources */,
+				2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */,
 				2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */,
 				2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */,
 				2170CA092CAF399E00D9A03D /* RecorderViewController+Section.swift in Sources */,
+				2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */,
 				2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */,
 				2170CA022CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift in Sources */,
 				2170C9FE2CAB4F7C00D9A03D /* RecorderItem.swift in Sources */,

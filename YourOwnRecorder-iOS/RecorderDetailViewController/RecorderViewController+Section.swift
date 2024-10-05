@@ -13,7 +13,7 @@ extension RecorderViewController {
         case title
         case description
         case isShowed
-        case records
+        case contents
         
         var name: String {
             switch self {
@@ -21,7 +21,7 @@ extension RecorderViewController {
             case .title: return NSLocalizedString("Title", comment: "Title section name")
             case .description: return NSLocalizedString("Description", comment: "Description section name")
             case .isShowed: return NSLocalizedString("Is showed", comment: "Is showed section name")
-            case .records: return NSLocalizedString("Records", comment: "Records section name")
+            case .contents: return NSLocalizedString("Contents", comment: "Contents section name")
             }
         }
     }
