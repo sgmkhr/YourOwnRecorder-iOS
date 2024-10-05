@@ -23,6 +23,7 @@
 		2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0B2CAF4A4D00D9A03D /* Record.swift */; };
 		2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */; };
 		2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */; };
+		2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA132CB1734500D9A03D /* TextFieldContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2170CA0B2CAF4A4D00D9A03D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
 		2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
 		2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
+		2170CA132CB1734500D9A03D /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */,
+				2170CA132CB1734500D9A03D /* TextFieldContentView.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				2170C9E12CAB48A100D9A03D /* AppDelegate.swift in Sources */,
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
 				2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */,
+				2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */,
 				2170CA042CADECCE00D9A03D /* RecorderViewController.swift in Sources */,
 				2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */,
 				2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */,
