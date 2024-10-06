@@ -14,6 +14,8 @@ extension RecorderViewController {
         case description
         case updatedDate
         case content
+        case editableDate(Date)
+        case editableText(String?)
         
         var imageName: String? {
             switch self {
@@ -22,6 +24,7 @@ extension RecorderViewController {
             case .description: return "description"
             case .updatedDate: return "updatedDate"
             case .content: return "content"
+            default: return nil
             }
         }
         
@@ -38,6 +41,7 @@ extension RecorderViewController {
             case .description: return .callout
             case .updatedDate: return .footnote
             case .content: return .subheadline
+            default: return .body
             }
         }
     }

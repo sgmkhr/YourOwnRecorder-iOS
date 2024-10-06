@@ -24,6 +24,9 @@
 		2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */; };
 		2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */; };
 		2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA132CB1734500D9A03D /* TextFieldContentView.swift */; };
+		2170CA162CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */; };
+		2170CA182CB331DA00D9A03D /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA172CB331DA00D9A03D /* TextViewContentView.swift */; };
+		2170CA1A2CB3330C00D9A03D /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
 		2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
 		2170CA132CB1734500D9A03D /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
+		2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
+		2170CA172CB331DA00D9A03D /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
+		2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,9 @@
 			children = (
 				2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */,
 				2170CA132CB1734500D9A03D /* TextFieldContentView.swift */,
+				2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */,
+				2170CA172CB331DA00D9A03D /* TextViewContentView.swift */,
+				2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */,
 			);
 			path = ContentViews;
 			sourceTree = "<group>";
@@ -220,14 +229,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2170C9E52CAB48A100D9A03D /* RecorderListViewController.swift in Sources */,
+				2170CA1A2CB3330C00D9A03D /* DatePickerContentView.swift in Sources */,
 				2170C9E12CAB48A100D9A03D /* AppDelegate.swift in Sources */,
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
 				2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */,
 				2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */,
+				2170CA162CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift in Sources */,
 				2170CA042CADECCE00D9A03D /* RecorderViewController.swift in Sources */,
 				2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */,
 				2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */,
 				2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */,
+				2170CA182CB331DA00D9A03D /* TextViewContentView.swift in Sources */,
 				2170CA092CAF399E00D9A03D /* RecorderViewController+Section.swift in Sources */,
 				2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */,
 				2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */,

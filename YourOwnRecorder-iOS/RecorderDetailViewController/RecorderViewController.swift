@@ -60,6 +60,10 @@ class RecorderViewController: UICollectionViewController {
             cell.contentConfiguration = headerConfiguration(for: cell, with: title)
         case (.view, _):
             cell.contentConfiguration = defaultConfiguration(for: cell, at: row)
+        case (.title, .editableText(let title)):
+            cell.contentConfiguration = titleConfiguration(for: cell, with: title)
+        case (.description, .editableText(let notes)):
+                    cell.contentConfiguration = descriptionConfiguration(for: cell, with: description)
         default:
             fatalError("Unexpected combination of section and row.")
         }
@@ -75,8 +79,8 @@ class RecorderViewController: UICollectionViewController {
     private func updateSnapshotForEditing() {
         var snapshot = Snapshot()
         snapshot.appendSections([.title, .description, .contents, .isShowed])
-        snapshot.appendItems([.header(Section.title.name)], toSection: .title)
-        snapshot.appendItems([.header(Section.description.name)], toSection: .description)
+        snapshot.appendItems([.header(Section.title.name), .editableText(recorder.title)], toSection: .title)
+        snapshot.appendItems([.header(Section.description.name), .editableText(recorder.description)], toSection: .description)
         snapshot.appendItems([.header(Section.contents.name)], toSection: .contents)
         snapshot.appendItems([.header(Section.isShowed.name)], toSection: .isShowed)
         dataSource.apply(snapshot)
