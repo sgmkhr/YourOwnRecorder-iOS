@@ -9,49 +9,17 @@
 /* Begin PBXBuildFile section */
 		2170C9E12CAB48A100D9A03D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9E02CAB48A100D9A03D /* AppDelegate.swift */; };
 		2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9E22CAB48A100D9A03D /* SceneDelegate.swift */; };
-		2170C9E52CAB48A100D9A03D /* RecorderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9E42CAB48A100D9A03D /* RecorderListViewController.swift */; };
-		2170C9E82CAB48A100D9A03D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2170C9E62CAB48A100D9A03D /* Main.storyboard */; };
 		2170C9EA2CAB48A500D9A03D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2170C9E92CAB48A500D9A03D /* Assets.xcassets */; };
 		2170C9ED2CAB48A500D9A03D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2170C9EB2CAB48A500D9A03D /* LaunchScreen.storyboard */; };
-		2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FB2CAB4E2600D9A03D /* Recorder.swift */; };
-		2170C9FE2CAB4F7C00D9A03D /* RecorderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FD2CAB4F7C00D9A03D /* RecorderItem.swift */; };
-		2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170C9FF2CAC271C00D9A03D /* Date+Today.swift */; };
-		2170CA022CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */; };
-		2170CA042CADECCE00D9A03D /* RecorderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA032CADECCE00D9A03D /* RecorderViewController.swift */; };
-		2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */; };
-		2170CA092CAF399E00D9A03D /* RecorderViewController+Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */; };
-		2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0B2CAF4A4D00D9A03D /* Record.swift */; };
-		2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */; };
-		2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */; };
-		2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA132CB1734500D9A03D /* TextFieldContentView.swift */; };
-		2170CA162CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */; };
-		2170CA182CB331DA00D9A03D /* TextViewContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA172CB331DA00D9A03D /* TextViewContentView.swift */; };
-		2170CA1A2CB3330C00D9A03D /* DatePickerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2170C9DD2CAB48A100D9A03D /* YourOwnRecorder-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YourOwnRecorder-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2170C9E02CAB48A100D9A03D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2170C9E22CAB48A100D9A03D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2170C9E42CAB48A100D9A03D /* RecorderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderListViewController.swift; sourceTree = "<group>"; };
-		2170C9E72CAB48A100D9A03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2170C9E92CAB48A500D9A03D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2170C9EC2CAB48A500D9A03D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2170C9EE2CAB48A500D9A03D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2170C9FB2CAB4E2600D9A03D /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
-		2170C9FD2CAB4F7C00D9A03D /* RecorderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderItem.swift; sourceTree = "<group>"; };
-		2170C9FF2CAC271C00D9A03D /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
-		2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderListViewController+DataSource.swift"; sourceTree = "<group>"; };
-		2170CA032CADECCE00D9A03D /* RecorderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderViewController.swift; sourceTree = "<group>"; };
-		2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Row.swift"; sourceTree = "<group>"; };
-		2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+Section.swift"; sourceTree = "<group>"; };
-		2170CA0B2CAF4A4D00D9A03D /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
-		2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RecorderViewController+CellConfiguration.swift"; sourceTree = "<group>"; };
-		2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+PinnedSubview.swift"; sourceTree = "<group>"; };
-		2170CA132CB1734500D9A03D /* TextFieldContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldContentView.swift; sourceTree = "<group>"; };
-		2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIContentConfiguration+Stateless.swift"; sourceTree = "<group>"; };
-		2170CA172CB331DA00D9A03D /* TextViewContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewContentView.swift; sourceTree = "<group>"; };
-		2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,77 +52,13 @@
 		2170C9DF2CAB48A100D9A03D /* YourOwnRecorder-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2170C9F62CAB4C4000D9A03D /* Models */,
-				2170CA0F2CB1695300D9A03D /* ContentViews */,
-				2170C9FA2CAB4C7200D9A03D /* RecordDetailViewController */,
-				2170C9F92CAB4C6600D9A03D /* RecordListViewController */,
-				2170C9F82CAB4C5700D9A03D /* RecorderDetailViewController */,
-				2170C9F72CAB4C4700D9A03D /* RecorderListViewController */,
 				2170C9E02CAB48A100D9A03D /* AppDelegate.swift */,
 				2170C9E22CAB48A100D9A03D /* SceneDelegate.swift */,
-				2170C9E62CAB48A100D9A03D /* Main.storyboard */,
 				2170C9E92CAB48A500D9A03D /* Assets.xcassets */,
 				2170C9EB2CAB48A500D9A03D /* LaunchScreen.storyboard */,
 				2170C9EE2CAB48A500D9A03D /* Info.plist */,
 			);
 			path = "YourOwnRecorder-iOS";
-			sourceTree = "<group>";
-		};
-		2170C9F62CAB4C4000D9A03D /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				2170C9FB2CAB4E2600D9A03D /* Recorder.swift */,
-				2170C9FD2CAB4F7C00D9A03D /* RecorderItem.swift */,
-				2170C9FF2CAC271C00D9A03D /* Date+Today.swift */,
-				2170CA0B2CAF4A4D00D9A03D /* Record.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		2170C9F72CAB4C4700D9A03D /* RecorderListViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2170C9E42CAB48A100D9A03D /* RecorderListViewController.swift */,
-				2170CA012CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift */,
-			);
-			path = RecorderListViewController;
-			sourceTree = "<group>";
-		};
-		2170C9F82CAB4C5700D9A03D /* RecorderDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-				2170CA032CADECCE00D9A03D /* RecorderViewController.swift */,
-				2170CA052CADF3EE00D9A03D /* RecorderViewController+Row.swift */,
-				2170CA082CAF399E00D9A03D /* RecorderViewController+Section.swift */,
-				2170CA0D2CB160A100D9A03D /* RecorderViewController+CellConfiguration.swift */,
-			);
-			path = RecorderDetailViewController;
-			sourceTree = "<group>";
-		};
-		2170C9F92CAB4C6600D9A03D /* RecordListViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RecordListViewController;
-			sourceTree = "<group>";
-		};
-		2170C9FA2CAB4C7200D9A03D /* RecordDetailViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RecordDetailViewController;
-			sourceTree = "<group>";
-		};
-		2170CA0F2CB1695300D9A03D /* ContentViews */ = {
-			isa = PBXGroup;
-			children = (
-				2170CA112CB169A900D9A03D /* UIView+PinnedSubview.swift */,
-				2170CA132CB1734500D9A03D /* TextFieldContentView.swift */,
-				2170CA152CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift */,
-				2170CA172CB331DA00D9A03D /* TextViewContentView.swift */,
-				2170CA192CB3330C00D9A03D /* DatePickerContentView.swift */,
-			);
-			path = ContentViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,7 +121,6 @@
 			files = (
 				2170C9ED2CAB48A500D9A03D /* LaunchScreen.storyboard in Resources */,
 				2170C9EA2CAB48A500D9A03D /* Assets.xcassets in Resources */,
-				2170C9E82CAB48A100D9A03D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,37 +131,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2170C9E52CAB48A100D9A03D /* RecorderListViewController.swift in Sources */,
-				2170CA1A2CB3330C00D9A03D /* DatePickerContentView.swift in Sources */,
 				2170C9E12CAB48A100D9A03D /* AppDelegate.swift in Sources */,
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
-				2170CA002CAC271C00D9A03D /* Date+Today.swift in Sources */,
-				2170CA142CB1734500D9A03D /* TextFieldContentView.swift in Sources */,
-				2170CA162CB32BBD00D9A03D /* UIContentConfiguration+Stateless.swift in Sources */,
-				2170CA042CADECCE00D9A03D /* RecorderViewController.swift in Sources */,
-				2170CA0E2CB160A200D9A03D /* RecorderViewController+CellConfiguration.swift in Sources */,
-				2170CA062CADF3EE00D9A03D /* RecorderViewController+Row.swift in Sources */,
-				2170CA0C2CAF4A4D00D9A03D /* Record.swift in Sources */,
-				2170CA182CB331DA00D9A03D /* TextViewContentView.swift in Sources */,
-				2170CA092CAF399E00D9A03D /* RecorderViewController+Section.swift in Sources */,
-				2170CA122CB169A900D9A03D /* UIView+PinnedSubview.swift in Sources */,
-				2170C9FC2CAB4E2600D9A03D /* Recorder.swift in Sources */,
-				2170CA022CAC2B4500D9A03D /* RecorderListViewController+DataSource.swift in Sources */,
-				2170C9FE2CAB4F7C00D9A03D /* RecorderItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2170C9E62CAB48A100D9A03D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2170C9E72CAB48A100D9A03D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2170C9EB2CAB48A500D9A03D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
