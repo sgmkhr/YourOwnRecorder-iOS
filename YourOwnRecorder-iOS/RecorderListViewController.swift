@@ -9,20 +9,15 @@ import UIKit
 
 class RecorderListViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var tableView: UITableView!
+    @IBOutlet weak var tableView: UITableView!
     
     let sectionTitles = ["Section1", "Section2"]
-    let data = [["recorder1-title", "recorder1-description"],["recorder2-title", "Recorder2-description"],["recorder3-title", "Recorder3-description"]]
+    var data = [["recorder1-title", "recorder1-description"],["recorder2-title", "Recorder2-description"],["recorder3-title", "Recorder3-description"]]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        テーブルビューの初期化
-        tableView = UITableView(frame: self.view.bounds)
         tableView.dataSource = self
         tableView.delegate = self
-        self.view.addSubview(tableView)
-        
     }
     
 //    セクション数を指定
@@ -42,10 +37,40 @@ class RecorderListViewController: UIViewController, UITableViewDataSource, UITab
     
 //    セルの内容を設定
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: .default, reuseIdentifier: "recorderListcell")
         cell.textLabel?.text = data[indexPath.section][indexPath.row]
         return cell
     }
+    
+//    セルの背景色を設定
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        cell.backgroundColor = UIColor(red: 236/255, green: 241/255, blue: 243/255, alpha: 1)
+    }
+    
+//    セル選択時の背景色を設定
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.selectionStyle = .none
+        cell?.backgroundColor = UIColor(red: 214/255, green: 225/255, blue: 232/255, alpha: 1)
+    }
+    
+//    スワイプ削除アクションの実装
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "削除") { (action, view, completionHandler) in
+            self.data.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        completionHandler(true)}
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "moveToEditorViewModally" {
+            let secondVC = segue.destination as! RecorderEditorViewController
+            secondVC.recorder = data[0]
+                }
+    }
+    
 }
 
 

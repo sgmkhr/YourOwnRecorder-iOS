@@ -14,6 +14,7 @@
 		2170CA1C2CB5640000D9A03D /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2170CA1B2CB5640000D9A03D /* Storyboard.storyboard */; };
 		2170CA1E2CB564B200D9A03D /* RecorderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA1D2CB564B200D9A03D /* RecorderListViewController.swift */; };
 		2170CA282CB56E0300D9A03D /* RecorderListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2170CA272CB56E0300D9A03D /* RecorderListCell.swift */; };
+		21BCC3DD2CB5D71D00B77BF9 /* RecorderEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC3DC2CB5D71D00B77BF9 /* RecorderEditorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2170CA1B2CB5640000D9A03D /* Storyboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2170CA1D2CB564B200D9A03D /* RecorderListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderListViewController.swift; sourceTree = "<group>"; };
 		2170CA272CB56E0300D9A03D /* RecorderListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderListCell.swift; sourceTree = "<group>"; };
+		21BCC3DC2CB5D71D00B77BF9 /* RecorderEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderEditorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2170CA1B2CB5640000D9A03D /* Storyboard.storyboard */,
 				2170CA1D2CB564B200D9A03D /* RecorderListViewController.swift */,
 				2170CA272CB56E0300D9A03D /* RecorderListCell.swift */,
+				21BCC3DC2CB5D71D00B77BF9 /* RecorderEditorViewController.swift */,
 			);
 			path = "YourOwnRecorder-iOS";
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
 				2170CA1E2CB564B200D9A03D /* RecorderListViewController.swift in Sources */,
 				2170CA282CB56E0300D9A03D /* RecorderListCell.swift in Sources */,
+				21BCC3DD2CB5D71D00B77BF9 /* RecorderEditorViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
