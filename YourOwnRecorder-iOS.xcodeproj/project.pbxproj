@@ -15,7 +15,20 @@
 		21BCC4312CC4881700B77BF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4302CC4881700B77BF9 /* LoginViewController.swift */; };
 		21BCC4332CC4882400B77BF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BCC4322CC4882400B77BF9 /* Main.storyboard */; };
 		21BCC4352CC495E900B77BF9 /* RecordersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4342CC495E900B77BF9 /* RecordersListViewController.swift */; };
-		21BCC4372CC4960200B77BF9 /* RecordersListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BCC4362CC4960200B77BF9 /* RecordersListView.storyboard */; };
+		21BCC4372CC4960200B77BF9 /* Recorders.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BCC4362CC4960200B77BF9 /* Recorders.storyboard */; };
+		21BCC4392CC49B7400B77BF9 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4382CC49B7400B77BF9 /* Recorder.swift */; };
+		21BCC43B2CC49C0300B77BF9 /* RecorderItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC43A2CC49C0300B77BF9 /* RecorderItem.swift */; };
+		21BCC43D2CC49E5C00B77BF9 /* InputItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC43C2CC49E5C00B77BF9 /* InputItem.swift */; };
+		21BCC4422CC4AC9A00B77BF9 /* RecorderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4412CC4AC9A00B77BF9 /* RecorderDetailViewController.swift */; };
+		21BCC4442CC4B87C00B77BF9 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4432CC4B87C00B77BF9 /* Record.swift */; };
+		21BCC4462CC4C2A300B77BF9 /* RecorderEditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4452CC4C2A300B77BF9 /* RecorderEditionViewController.swift */; };
+		21BCC44C2CC4D29500B77BF9 /* InputItemModals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21BCC44B2CC4D29500B77BF9 /* InputItemModals.storyboard */; };
+		21BCC44E2CC4D2AE00B77BF9 /* TextFieldItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC44D2CC4D2AE00B77BF9 /* TextFieldItemModalViewController.swift */; };
+		21BCC4502CC4D91500B77BF9 /* TextAreaItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC44F2CC4D91500B77BF9 /* TextAreaItemModalViewController.swift */; };
+		21BCC4522CC4DA3000B77BF9 /* SliderItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4512CC4DA3000B77BF9 /* SliderItemModalViewController.swift */; };
+		21BCC4542CC4DA7900B77BF9 /* CalenderItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4532CC4DA7900B77BF9 /* CalenderItemModalViewController.swift */; };
+		21BCC4562CC4DAAB00B77BF9 /* NumberFieldItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4552CC4DAAB00B77BF9 /* NumberFieldItemModalViewController.swift */; };
+		21BCC4582CC4DADA00B77BF9 /* SelectFieldItemModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BCC4572CC4DADA00B77BF9 /* SelectFieldItemModalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +42,20 @@
 		21BCC4302CC4881700B77BF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		21BCC4322CC4882400B77BF9 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		21BCC4342CC495E900B77BF9 /* RecordersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordersListViewController.swift; sourceTree = "<group>"; };
-		21BCC4362CC4960200B77BF9 /* RecordersListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RecordersListView.storyboard; sourceTree = "<group>"; };
+		21BCC4362CC4960200B77BF9 /* Recorders.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Recorders.storyboard; sourceTree = "<group>"; };
+		21BCC4382CC49B7400B77BF9 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		21BCC43A2CC49C0300B77BF9 /* RecorderItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderItem.swift; sourceTree = "<group>"; };
+		21BCC43C2CC49E5C00B77BF9 /* InputItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputItem.swift; sourceTree = "<group>"; };
+		21BCC4412CC4AC9A00B77BF9 /* RecorderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderDetailViewController.swift; sourceTree = "<group>"; };
+		21BCC4432CC4B87C00B77BF9 /* Record.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Record.swift; sourceTree = "<group>"; };
+		21BCC4452CC4C2A300B77BF9 /* RecorderEditionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecorderEditionViewController.swift; sourceTree = "<group>"; };
+		21BCC44B2CC4D29500B77BF9 /* InputItemModals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InputItemModals.storyboard; sourceTree = "<group>"; };
+		21BCC44D2CC4D2AE00B77BF9 /* TextFieldItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldItemModalViewController.swift; sourceTree = "<group>"; };
+		21BCC44F2CC4D91500B77BF9 /* TextAreaItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextAreaItemModalViewController.swift; sourceTree = "<group>"; };
+		21BCC4512CC4DA3000B77BF9 /* SliderItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderItemModalViewController.swift; sourceTree = "<group>"; };
+		21BCC4532CC4DA7900B77BF9 /* CalenderItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderItemModalViewController.swift; sourceTree = "<group>"; };
+		21BCC4552CC4DAAB00B77BF9 /* NumberFieldItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberFieldItemModalViewController.swift; sourceTree = "<group>"; };
+		21BCC4572CC4DADA00B77BF9 /* SelectFieldItemModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFieldItemModalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +102,7 @@
 		21BCC4242CC47F6E00B77BF9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				21BCC43E2CC4A31700B77BF9 /* Common */,
 				21BCC4272CC47FE300B77BF9 /* Recorders */,
 				21BCC4252CC47FCD00B77BF9 /* Login */,
 			);
@@ -94,8 +121,11 @@
 		21BCC4272CC47FE300B77BF9 /* Recorders */ = {
 			isa = PBXGroup;
 			children = (
+				21BCC4362CC4960200B77BF9 /* Recorders.storyboard */,
 				21BCC4342CC495E900B77BF9 /* RecordersListViewController.swift */,
-				21BCC4362CC4960200B77BF9 /* RecordersListView.storyboard */,
+				21BCC4412CC4AC9A00B77BF9 /* RecorderDetailViewController.swift */,
+				21BCC4452CC4C2A300B77BF9 /* RecorderEditionViewController.swift */,
+				21BCC4472CC4D20500B77BF9 /* modals */,
 			);
 			path = Recorders;
 			sourceTree = "<group>";
@@ -112,8 +142,33 @@
 			children = (
 				21BCC4282CC4800500B77BF9 /* Resources */,
 				21BCC42B2CC480CD00B77BF9 /* User.swift */,
+				21BCC4382CC49B7400B77BF9 /* Recorder.swift */,
+				21BCC43A2CC49C0300B77BF9 /* RecorderItem.swift */,
+				21BCC43C2CC49E5C00B77BF9 /* InputItem.swift */,
+				21BCC4432CC4B87C00B77BF9 /* Record.swift */,
 			);
 			path = Domain;
+			sourceTree = "<group>";
+		};
+		21BCC43E2CC4A31700B77BF9 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		21BCC4472CC4D20500B77BF9 /* modals */ = {
+			isa = PBXGroup;
+			children = (
+				21BCC44B2CC4D29500B77BF9 /* InputItemModals.storyboard */,
+				21BCC44D2CC4D2AE00B77BF9 /* TextFieldItemModalViewController.swift */,
+				21BCC44F2CC4D91500B77BF9 /* TextAreaItemModalViewController.swift */,
+				21BCC4512CC4DA3000B77BF9 /* SliderItemModalViewController.swift */,
+				21BCC4532CC4DA7900B77BF9 /* CalenderItemModalViewController.swift */,
+				21BCC4552CC4DAAB00B77BF9 /* NumberFieldItemModalViewController.swift */,
+				21BCC4572CC4DADA00B77BF9 /* SelectFieldItemModalViewController.swift */,
+			);
+			path = modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +230,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BCC4332CC4882400B77BF9 /* Main.storyboard in Resources */,
+				21BCC44C2CC4D29500B77BF9 /* InputItemModals.storyboard in Resources */,
 				2170C9ED2CAB48A500D9A03D /* LaunchScreen.storyboard in Resources */,
 				2170C9EA2CAB48A500D9A03D /* Assets.xcassets in Resources */,
-				21BCC4372CC4960200B77BF9 /* RecordersListView.storyboard in Resources */,
+				21BCC4372CC4960200B77BF9 /* Recorders.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,9 +245,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				21BCC4312CC4881700B77BF9 /* LoginViewController.swift in Sources */,
+				21BCC4502CC4D91500B77BF9 /* TextAreaItemModalViewController.swift in Sources */,
+				21BCC4522CC4DA3000B77BF9 /* SliderItemModalViewController.swift in Sources */,
+				21BCC4462CC4C2A300B77BF9 /* RecorderEditionViewController.swift in Sources */,
+				21BCC43D2CC49E5C00B77BF9 /* InputItem.swift in Sources */,
+				21BCC4582CC4DADA00B77BF9 /* SelectFieldItemModalViewController.swift in Sources */,
+				21BCC4442CC4B87C00B77BF9 /* Record.swift in Sources */,
 				2170C9E12CAB48A100D9A03D /* AppDelegate.swift in Sources */,
 				2170C9E32CAB48A100D9A03D /* SceneDelegate.swift in Sources */,
+				21BCC4392CC49B7400B77BF9 /* Recorder.swift in Sources */,
+				21BCC4542CC4DA7900B77BF9 /* CalenderItemModalViewController.swift in Sources */,
+				21BCC44E2CC4D2AE00B77BF9 /* TextFieldItemModalViewController.swift in Sources */,
+				21BCC4562CC4DAAB00B77BF9 /* NumberFieldItemModalViewController.swift in Sources */,
+				21BCC4422CC4AC9A00B77BF9 /* RecorderDetailViewController.swift in Sources */,
 				21BCC4352CC495E900B77BF9 /* RecordersListViewController.swift in Sources */,
+				21BCC43B2CC49C0300B77BF9 /* RecorderItem.swift in Sources */,
 				21BCC42C2CC480CD00B77BF9 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
